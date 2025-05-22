@@ -1,9 +1,23 @@
--- Check if the database 'your_database_name' exists.
--- If it exists, drop it.
+/*
+------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
+CREATE DATABASE AND SCHEMAS 
+
+SCRIPT PURPOSE:
+    This scripts creates a new database in datawarehouse if it already exists and creates a new database
+    named datawarehouse, Alternatively in case of Postgresql we need to connect with the database and open
+    the query tool in that database and run the Create schema script generate 3 dedicated layers as Bronze,
+    silver & gold. Each serving its own purpose.
+
 -- IMPORTANT: This will permanently delete all data in the database.
+
+------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
+*/
 
 -- First, disconnect all other active sessions from the database
 -- This is necessary if you encounter "database is being accessed by other users" error.
+
 SELECT pg_terminate_backend(pg_stat_activity.pid)
 FROM pg_stat_activity
 WHERE pg_stat_activity.datname = 'datawarehouse'
