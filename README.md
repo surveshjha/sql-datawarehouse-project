@@ -1,2 +1,2 @@
 # sql-datawarehouse-project
-This project is real use case of consuming the raw data, ETL Processes and Finally Generating the Analytics
+Building a mordern data warehouse with Postgre Server, including ETL Processes, data modelling and analytics
