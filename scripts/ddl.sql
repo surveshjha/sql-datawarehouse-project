@@ -33,14 +33,14 @@ CREATE TABLE IF NOT EXISTS bronze.crm_sales_details(
 );
 DROP TABLE IF EXISTS bronze.erp_loc_a101;
 CREATE TABLE IF NOT EXISTS bronze.erp_loc_a101(
-cid VARCHAR(50),
-cntry VARCHAR(50)
+    cid VARCHAR(50),
+    cntry VARCHAR(50)
 );
 DROP TABLE IF EXISTS bronze.erp_cust_az12;
 CREATE TABLE IF NOT EXISTS bronze.erp_cust_az12(
-cid VARCHAR(50),
-bdate DATE,
-gen VARCHAR(50)
+    cid VARCHAR(50),
+    bdate DATE,
+    gen VARCHAR(50)
 );
 
 DROP TABLE IF EXISTS bronze.erp_cat_g1v2;
@@ -48,5 +48,5 @@ CREATE TABLE IF NOT EXISTS bronze.erp_cat_g1v2(
 	id				VARCHAR(50),
 	cat				VARCHAR(50),
 	subcat			VARCHAR(50),
-	maintenance    VARCHAR(50)
+	maintenance     VARCHAR(50)
 );
